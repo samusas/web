@@ -28,10 +28,14 @@ a{text-decoration: none;}
 .bggrey{ background-color: #e3e3e3; }
 .bggreen{ background-color: #2ecc71; }
 
+.hoverbggreen:hover{ background-color: #2ecc71; }
+
 .textgrey{ color: #848484; }
 .textblack{ color: #000000; }
 .textgreen{ color: #2ecc71; }
 .textwhite{ color: #ffffff; }
+
+.hovertextgreen:hover{ color: #2ecc71; }
 
 .circle{
   border-radius:50%;
@@ -63,6 +67,11 @@ a{text-decoration: none;}
    box-sizing: border-box;
 }
 
+.padding40{
+   padding:40px;
+   box-sizing: border-box;
+}
+
 .font32{ font-size: 32px; }
 .font16{ font-size: 16px; }
 
@@ -78,8 +87,7 @@ a{text-decoration: none;}
 .inputframe{
     display:flex;
     height:50px;
-    width:460px;
-    margin:0 auto;
+    max-width:460px;
 }
 
 
@@ -104,6 +112,21 @@ a{text-decoration: none;}
     margin-left:-10px;
     font-weight: bold;
     font-size:18px;
+}
+
+.videoframe{ width:100%;}
+
+
+.footer a{
+   display:inline-block;
+   margin-left:20px;
+}
+
+
+.footerframe{
+    display: block;
+    max-width: 540px;
+    line-height: 130px;
 }
 
 .height0{ height:600px; }
@@ -155,25 +178,42 @@ a{text-decoration: none;}
 
 <div class="row bggrey height2">
 <div class="frame">
-<div class="col2">
+<div class="col2"><div class="padding40">
 <h3 class="textblack aleft">Get Notified Of Any Updates!</h3>
 <p class="textgrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
 
 <div class="inputframe">
 <input class="field" type="text" placeholder="Email Address">
 <button class="btn bggreen textwhite">Notify</button>
-</div>
+</div></div></div>
 
-<div class="col2">
+<div class="col2"><div class="padding40">
 <img class="videoframe" src="video.jpg">
+</div></div></div></div>
+
+<div class="row bgwhite height3">
+<div class="frame"></div>
 </div>
-</div></div>
 
-<div class="row bgwhite height3"></div>
+<div class="row bgwhite height4">
+<div class="frame"></div>
+</div>
 
-<div class="row bgwhite height4"></div>
+<div class="row bggrey height5">
+<div class="frame">
+<div class="col1">
+<div class="footerframe center font16">
+<a class="textgrey hovertextgreen" href="#">Contact</a>
+<a class="textgrey hovertextgreen" href="#">Download</a>
+<a class="textgrey hovertextgreen" href="#">Press</a>
+<a class="textgrey hovertextgreen" href="#">Email</a>
+<a class="textgrey hovertextgreen" href="#">Support</a>
+<a class="textgrey hovertextgreen" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
 
-<div class="row bggrey height5"></div>
+</div>
 
 </div>
 
