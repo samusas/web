@@ -84,6 +84,30 @@ a{text-decoration: none;}
    margin: auto;
 }
 
+.os{
+  width:190px;
+}
+
+
+.os a{
+   display: inline-block;
+   width:54px;
+   height:54px;
+   line-height: 54px;
+   background: rgba(0,0,0,0.5);
+   cursor: pointer;
+   margin:0 2px;
+   font-size:22px;
+}
+
+
+.floatframe{
+    padding-left:60px;
+    padding-top:200px;
+    box-sizing: border-box;
+}
+
+
 .inputframe{
     display:flex;
     height:50px;
@@ -115,6 +139,63 @@ a{text-decoration: none;}
 }
 
 .videoframe{ width:100%;}
+
+
+.person-com li{
+    text-align: center;
+    padding:0 10%;
+    box-sizing: border-box;
+}
+.person-com p{ 
+    font-size:16px;
+    color: #848484; 
+}
+
+.person-com span{ 
+    font-size:16px; 
+    font-weight:bold; 
+    color: #000000; 
+}
+
+
+.person-img{
+    padding: 20px 8px;
+    box-sizing: border-box;
+}
+
+
+.person-img li{
+    display: inline-block;
+    position: relative;
+    width:50px;
+    height:50px;
+    margin:1px;
+    cursor:pointer;
+}
+
+
+.person-img img{
+   position:relative;
+   max-width:50px;
+   height:auto;
+   z-index: 99;
+}
+
+.overlay{
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:9999;
+   width:50px;
+   height:50px;
+   background:rgba(97, 170, 102, 0.5);
+   opacity: 0;
+}
+
+
+.person-img li:hover .overlay{
+   opacity: 1;
+}
 
 .social-link{ width:254px; }
 
@@ -150,6 +231,8 @@ footer a{
 .acenter{ text-align: center; }
 .center{ margin:0 auto; }
 
+.hide{display:none;}
+.show{display:block;}
 
 </style>
 
@@ -159,10 +242,15 @@ footer a{
 
 <div class="row bgimg height0">
 <div class="frame">
-<div class="col1">
+<div class="col1 floatframe">
 <h1 class="textwhite font32">WEB TITLE</h1>
 <h3 class="textwhite font16 vpad20">A great new free psd theme to showcase your new application. </h3>
 
+<div class="os">
+<a class="acenter circle hoverbggreen" href="#"><i class="textwhite fa fa-apple"></i></a>
+<a class="acenter circle hoverbggreen" href="#"><i class="textwhite fa fa-android"></i></a>
+<a class="acenter circle hoverbggreen" href="#"><i class="textwhite fa fa-windows"></i></a>
+</div>
 </div></div></div>
 
 <div class="row bgwhite height1">
@@ -204,9 +292,117 @@ footer a{
 
 <div class="row bgwhite height3">
 <div class="frame">
+<div class="col1 vpad40">
 
-</div>
-</div>
+<ul class="person-com">
+<li class="show">
+<p>“Comment 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 1</span>
+</li>
+<li class="hide">
+<p>“Comment 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 2</span>
+</li>
+<li class="hide">
+<p>“Comment 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 3</span>
+</li>
+<li class="hide">
+<p>“Comment 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 4</span>
+</li>
+<li class="hide">
+<p>“Comment 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 5</span>
+</li>
+<li class="hide">
+<p>“Comment 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 6</span>
+</li>
+<li class="hide">
+<p>“Comment 7 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 7</span>
+</li>
+<li class="hide">
+<p>“Comment 8 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 8</span>
+</li>
+<li class="hide">
+<p class="comment">“Comment 9 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 9</span>
+</li>
+<li class="hide">
+<p>“Comment 10 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 10</span>
+</li>
+<li class="hide">
+<p>“Comment 11 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 11</span>
+</li>
+<li class="hide">
+<p>“Comment 12 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 12</span>
+</li>
+<li class="hide">
+<p>“Comment 13 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 13</span>
+</li>
+<li class="hide">
+<p>“Comment 14 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 14</span>
+</li>
+<li class="hide">
+<p>“Comment 15 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 15</span>
+</li>
+<li class="hide">
+<p>“Comment 16 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 16</span>
+</li>
+<li class="hide">
+<p>“Comment 17 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 17</span>
+</li>
+<li class="hide">
+<p>“Comment 18 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 18</span>
+</li>
+<li class="hide">
+<p>“Comment 19 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 19</span>
+</li>
+<li class="hide">
+<p>“Comment 20 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</p>
+<span>Person 20</span>
+</li>
+</ul>
+
+<ul class="person-img">
+<li data-index="0"><img src="clientimg/img-1.jpg"><span class="overlay"></span></li>
+<li data-index="1"><img src="clientimg/img-2.jpg"><span class="overlay"></span></li>
+<li data-index="2"><img src="clientimg/img-3.jpg"><span class="overlay"></span></li>
+<li data-index="3"><img src="clientimg/img-4.jpg"><span class="overlay"></span></li>
+<li data-index="4"><img src="clientimg/img-5.jpg"><span class="overlay"></span></li>
+<li data-index="5"><img src="clientimg/img-6.jpg"><span class="overlay"></span></li>
+<li data-index="6"><img src="clientimg/img-7.jpg"><span class="overlay"></span></li>
+<li data-index="7"><img src="clientimg/img-8.jpg"><span class="overlay"></span></li>
+<li data-index="8"><img src="clientimg/img-9.jpg"><span class="overlay"></span></li>
+<li data-index="9"><img src="clientimg/img-10.jpg"><span class="overlay"></span></li>
+<li data-index="10"><img src="clientimg/img-11.jpg"><span class="overlay"></span></li>
+<li data-index="11"><img src="clientimg/img-12.jpg"><span class="overlay"></span></li>
+<li data-index="11"><img src="clientimg/img-13.jpg"><span class="overlay"></span></li>
+<li data-index="12"><img src="clientimg/img-14.jpg"><span class="overlay"></span></li>
+<li data-index="13"><img src="clientimg/img-15.jpg"><span class="overlay"></span></li>
+<li data-index="14"><img src="clientimg/img-16.jpg"><span class="overlay"></span></li>
+<li data-index="15"><img src="clientimg/img-17.jpg"><span class="overlay"></span></li>
+<li data-index="16"><img src="clientimg/img-18.jpg"><span class="overlay"></span></li>
+<li data-index="17"><img src="clientimg/img-19.jpg"><span class="overlay"></span></li>
+<li data-index="18"><img src="clientimg/img-20.jpg"><span class="overlay"></span></li>
+<li data-index="19"><img src="clientimg/img-21.jpg"><span class="overlay"></span></li>
+</ul>
+
+</div></div></div>
+
 
 <div class="row bgwhite height4">
 <div class="frame">
