@@ -1,0 +1,289 @@
+
+body{
+   margin:0 0;
+   padding:0 0;
+   font-family: sans-serif;
+}
+
+ul{
+  list-style: none;
+  margin:0 0;
+  padding:0 0;
+}
+
+a{text-decoration: none;}
+
+.bgimg{ background-image:url("headerimg.jpg"); }
+.bgwhite{ background-color: #ffffff; }
+.bggrey{ background-color: #e3e3e3; }
+.bggreen{ background-color: #2ecc71; }
+
+.hoverbggreen:hover{ background-color: #2ecc71; }
+
+.textgrey{ color: #848484; }
+.textblack{ color: #000000; }
+.textgreen{ color: #2ecc71; }
+.textwhite{ color: #ffffff; }
+
+.hovertextgreen:hover{ color: #2ecc71; }
+
+
+.content{ margin:auto; }
+
+.circle{
+  border-radius:50%;
+}
+
+.row{
+  display:block;
+  max-width:100%;
+}
+
+.frame{
+    max-width:1200px;
+    margin:auto; 
+}
+
+.col1{width:99.99999%;}
+.col2{float:left; width:49.99999%;}
+.col3{float:left; width:33.33333%;}
+
+.vpad20{padding-top:20px; padding-bottom:20px;}
+.vpad40{padding-top:40px; padding-bottom:40px;}
+.hpad20{padding-left:20px; padding-right:20px;}
+.hpad40{padding-left:40px; padding-right:40px;}
+
+.hpad20,
+.hpad40,
+.vpad20,
+.vpad40{
+   box-sizing: border-box;
+}
+
+.padding40{
+   padding:40px;
+   box-sizing: border-box;
+}
+
+.font32{ font-size: 32px; }
+.font16{ font-size: 16px; }
+
+.large{ 
+   display:block;
+   width:100px;
+   height:100px;
+   line-height: 130px;
+   text-align:center;
+   margin: auto;
+}
+
+.os{
+  width:190px;
+}
+
+
+.os a{
+   display: inline-block;
+   width:54px;
+   height:54px;
+   line-height: 54px;
+   background: rgba(0,0,0,0.5);
+   cursor: pointer;
+   margin:0 2px;
+   font-size:22px;
+}
+
+
+.floatframe{
+    padding-left:60px;
+    padding-top:200px;
+    box-sizing: border-box;
+}
+
+
+.inputframe{
+    display:flex;
+    height:50px;
+    max-width:460px;
+}
+
+
+.field{
+     display:flex;
+     width:300px;
+     height:50px;
+     padding:0 10px;
+     box-sizing: border-box;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border:1px solid #acacac;
+}
+
+.btn{
+    display:block;
+    width:120px;
+    height:50px;
+    border:1px solid #2ecc71;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left:-10px;
+    font-weight: bold;
+    font-size:18px;
+}
+
+.videoframe{ width:100%;}
+
+
+.person-com li{
+    text-align: center;
+    padding:0 10%;
+    box-sizing: border-box;
+}
+.person-com p{ 
+    font-size:16px;
+    color: #848484; 
+}
+
+.person-com span{ 
+    font-size:16px; 
+    font-weight:bold; 
+    color: #000000; 
+}
+
+
+.person-img{
+    padding: 20px 8px;
+    box-sizing: border-box;
+}
+
+
+.person-img li{
+    display: inline-block;
+    position: relative;
+    width:50px;
+    height:50px;
+    margin:1px;
+    cursor:pointer;
+}
+
+
+.person-img img{
+   position:relative;
+   max-width:50px;
+   height:auto;
+   z-index: 99;
+}
+
+.overlay{
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:9999;
+   width:50px;
+   height:50px;
+   background:rgba(97, 170, 102, 0.5);
+   opacity: 0;
+}
+
+
+.person-img li:hover .overlay{
+   opacity: 1;
+}
+
+.social-link{ width:254px; }
+
+.social-link a{
+   display: inline-block;
+   width:34px;
+   height:34px;
+   line-height: 34px;
+   cursor: pointer;
+   margin:0 2px;
+}
+
+
+footer a{
+   display:inline-block;
+   margin-left:20px;
+}
+
+
+.footerframe{
+    display: block;
+    max-width: 540px;
+    line-height: 130px;
+}
+
+.height0{ height:600px; }
+.height1{ min-height:340px; }
+.height2{ min-height:420px; }
+.height3{ min-height:260px; }
+.height4{ min-height:200px; }
+.height5{ min-height:130px; }
+
+.acenter{ text-align: center; }
+.center{ margin:0 auto; }
+
+.hide{display:none;}
+.show{display:block;}
+
+
+
+@media screen and (max-width: 360px) 
+{
+
+
+.os{
+    margin:0 auto;
+}
+
+.floatframe{
+    padding-left:0;
+}
+
+.floatframe h1{
+    width: 300px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.floatframe h3{
+    width: 300px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+}
+
+@media screen and (max-width: 520px) 
+{
+
+
+.footerframe{
+    padding:20px 0;
+}
+
+.footerframe a{
+    display:block;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    margin:5px auto;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 700px) 
+{
+
+
+.col2{float:none; width:auto;}
+.col3{float:none; width:auto;}
+.person-img{
+    padding-left:20px;
+    padding-right:20px;
+
+}
